@@ -50,3 +50,28 @@ console.log(typeof myFunction);  // "object function" in documentation
 
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Stack(Primitive)(Copy hota h ), Heap(Non-Primitive)(Refence jata h)
+
+let myYoutubename = "hiteshchoudharydotcom"
+
+let anotherName = myYoutubename;
+anotherName = "chaiaurcode"
+
+console.log(myYoutubename);
+console.log(anotherName);
+
+let userOne = {
+    email: "user@google.com",
+    upi: "user@ybl"
+}
+
+let userTwo = userOne
+
+userTwo.email = "hitesh@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
